@@ -11,7 +11,6 @@ import CommentsList from './CommentsList';
 const Comments = () => {
   const [isAddingComment, setIsAddingComment] = useState(false);
   const params = useParams();
-  console.log(params)
 
   const { sendRequest, status, data: loadedComments } = useHttp(getAllComments)
 

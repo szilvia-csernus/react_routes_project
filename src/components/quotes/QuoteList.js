@@ -1,4 +1,4 @@
-import { useHistory, useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 import QuoteItem from "./QuoteItem";
 import classes from "./QuoteList.module.css";
@@ -14,7 +14,7 @@ const sortQuotes = (quotes, asc) => {
 };
 
 const QuoteList = (props) => {
-  const history = useHistory();
+  const navigate = useNavigate();
   const location = useLocation();
 
   //URLSearchParams is a default JS class
@@ -24,12 +24,12 @@ const QuoteList = (props) => {
   const sortedQuotes = sortQuotes(props.quotes, isSortTypeAscending);
 
   const changesortingHandler = () => {
-    history.push({
+    navigate({
       pathname: location.pathname,
       search: `?sort=${isSortTypeAscending ? "desc" : "asc"}`,
     });
   };
-  
+
   return (
     <>
       <div className={classes.sorting}>
