@@ -1,6 +1,4 @@
 import { useRef } from 'react';
-
-
 import Card from '../UI/Card';
 import LoadingSpinner from '../UI/LoadingSpinner';
 import classes from './QuoteForm.module.css';
@@ -22,8 +20,6 @@ const QuoteForm = (props) => {
   }
 
   return (
-    <>
-    
     <Card>
       <form className={classes.form} onSubmit={submitFormHandler}>
         {props.isLoading && (
@@ -45,7 +41,6 @@ const QuoteForm = (props) => {
         </div>
       </form>
     </Card>
-    </>
   );
 };
 

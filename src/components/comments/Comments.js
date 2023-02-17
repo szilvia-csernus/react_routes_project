@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 
 import classes from "./Comments.module.css";
 import NewCommentForm from "./NewCommentForm";
-import useHttp from "../../hooks/use-http";
+import useHttp from "../../hooks/use-http_old";
 import { getAllComments } from "../../lib/api";
 import LoadingSpinner from "../UI/LoadingSpinner";
 import CommentsList from './CommentsList';

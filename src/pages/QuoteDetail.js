@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import HighlightedQuote from "../components/quotes/HighlightedQuote.js";
 import LoadingSpinner from "../components/UI/LoadingSpinner";
-import useHttp from "../hooks/use-http";
+import useHttp from "../hooks/use-http_old";
 import { getSingleQuote } from "../lib/api";
 
 const QuoteDetail = () => {

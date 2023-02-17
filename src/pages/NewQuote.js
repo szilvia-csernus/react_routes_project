@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import QuoteForm from "../components/quotes/QuoteForm";
 import { addQuote } from "../lib/api";
-import useHttp from "../hooks/use-http.js"
+import useHttp from "../hooks/use-http_old.js"
 
 
 const NewQuote = () => {
