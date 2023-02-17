@@ -1,3 +1,18 @@
+# Great Quotes  
+
+### ReactJS project using: 
+* react, react-dom: ^18.2.0
+* react-router-dom: ^6.3.0
+
+### Features
+* Firebase backend
+* v6 routing
+* sorting in frontend ascending & descending
+
+## Live project link: https://react-router-project-66591.web.app
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
